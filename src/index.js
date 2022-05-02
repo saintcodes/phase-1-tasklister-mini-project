@@ -9,12 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 });
 
+document.createElement(form)
+
+
 function newToDo(todo) {
   console.log(todo)
   let p = document.createElement('p')
   let btn = document.createElement('button')
   btn.addEventListener('click', handleDelete)
-  p.textContent = todo
+  p.textContent = `${todo}  `
   btn.textContent = 'x'
   p.appendChild(btn)
   console.log(p)
